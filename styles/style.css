@@ -22,10 +22,6 @@
 /* navbar styles */
 
 
-.nav ul img{
-    height: 24px;
-    width: 24px;
-}
 nav{
     display: flex;
     justify-content: space-between;
@@ -33,6 +29,9 @@ nav{
     align-items: center;
     margin: 30px auto;
     
+}
+.logo img{
+    width: 10vw;
 }
 .nav ul{
     display: flex;
@@ -58,4 +57,14 @@ nav{
     align-items: center;
     gap: 2px;
     color: rgba(0, 0, 0, 1);
+}
+.nav ul img{
+    height: 24px;
+    width: 24px;
+}
+
+@media screen and (max-width:576px) {
+    .nav ul .home , .shop , .about-us{
+        display: none;
+    }
 }
