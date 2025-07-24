@@ -31,6 +31,15 @@
     font-size: 1.375rem;
 }
 
+.primary-btn{
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    height: 50px;
+    font-weight: 600;
+    border: none;
+
+}
+
 /* navbar styles */
 
 
@@ -105,6 +114,60 @@ nav{
     height: 77%;
 }
 
+/* plants section */
+.plants{
+    width: 80vw;
+    margin: 120px auto;
+}
+.plants h3{
+    font-weight: 700;
+    font-size: 3.125rem;
+    margin-bottom: 16px;
+}
+.plant-intro{
+    text-align: center;
+}
+.plants-description{
+    width: 77%;
+    margin: 0 auto;
+}
+
+/* plants card section */
+
+.plants-card{
+    display: grid;
+    grid-template-columns: repeat( 4 , 1fr);
+    margin: 49px auto;
+    width: 80vw;
+}
+.card{
+    margin-bottom: 30px;
+}
+.card img{
+    width: 18.75vw;
+    column-gap: 1.38vw;
+}
+.card h5{
+    text-align: center;
+    font-size: 1.375rem;
+}
+.card .name{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.card .price{
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: rgba(17, 17, 17, 1);
+}
+.card button{
+    width: 94%;
+    text-align: center;
+    margin-top: 0;
+}
+
 @media screen and (max-width:576px) {
     .nav ul .home , .shop , .about-us{
         display: none;
@@ -118,13 +181,25 @@ nav{
         margin-right: 0px;
         margin-left: 0px;
     }
-    /* .banner{
-        margin: 28 auto;
-    } */
     .banner-title{
         font-size: 24px;
     }
     .banner-description{
         font-size: 14px;
+    }
+    .plants-card{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .card img{
+        width: 37vw;
+    }
+    .card .name{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .card .price{
+        font-size: 16px;
+        color: rgba(17, 17, 17, 1);
+        margin-top: 0;
     }
 }
